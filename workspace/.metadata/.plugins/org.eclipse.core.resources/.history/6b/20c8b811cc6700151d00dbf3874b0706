@@ -1,0 +1,13 @@
+package Logica;
+
+
+public class ejemplo {
+
+	public static void main(String[] args)  {
+		Archivos arc=  new Archivos();
+		arc.AlmacenarContenidoTxt("");
+	}
+
+		
+
+}

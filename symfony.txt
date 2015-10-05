@@ -1,0 +1,9 @@
+creando el proyecto en composer:composer create-project symfony/framework-standard-edition my_project_name
+en la linea de comandos
+c:/wamp/www/agenciaviajes>php app/check.php
+
+en el archivo php.ini revisar que tenga el xdebug.max_nesting_level
+y colocarle un valor de 250
+
+iniciar el servidor virtual con el comando php app/console server:run
+y debe aparecer server running on http://127.0.0.1:8000

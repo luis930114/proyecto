@@ -1,0 +1,23 @@
+<?php
+
+namespace Agencia\MainBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Agencia\MainBundle\Entity\Pagos;
+use \Symfony\Component\HttpFoundation\Response;
+class PagoController extends Controller{
+	public function agregarpAction($id,$valor,$solicitud) {
+		
+		$pago=new Pagos();
+		$pago->setId($id);
+		$pago->setValor($valor);
+		$pago->setSolicitudAprobada($solicitud);
+		
+		$acum=$this->getDoctrine()->getManager();
+		$acum->persist($pago);
+		$acum->flush();
+		
+		return new Response('el id del producto es: '.$pago->getId().'  y se creo bien');
+		
+	}
+}

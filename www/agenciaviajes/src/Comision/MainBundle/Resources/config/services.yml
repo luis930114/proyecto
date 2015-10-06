@@ -1,0 +1,4 @@
+services:
+#    comision_main.example:
+#        class: Comision\MainBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

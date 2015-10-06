@@ -1,0 +1,1155 @@
+!SESSION 2015-10-05 10:27:28.993 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2015-10-05 10:27:59.753
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-05 10:27:59.753
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d8a1456,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.pdtextensions.core.ui.generategetters,Generate Getters and Setters,
+		Generate Getters and Setters,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@351fadfa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-05 10:28:17.512
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luis felipe'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-05 20:27:22.350 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 4 567 2015-10-05 20:27:52.768
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2015-10-05 20:27:52.768
+!MESSAGE Could not read metadata for 'RemoteSystemsTempFiles'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2015-10-05 20:27:52.770
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.jface 2 0 2015-10-05 20:27:58.518
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-05 20:27:58.518
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45cddfd3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.pdtextensions.core.ui.generategetters,Generate Getters and Setters,
+		Generate Getters and Setters,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40dc2ade,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-05 20:28:10.988
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luis felipe'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 23 2015-10-05 20:28:21.217
+!MESSAGE The server availability check failed Version: 1.0.0.v20150617-0732
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2015-10-05 20:29:11.017
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:94)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2015-10-05 20:29:11.046
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY org.eclipse.php.debug.core 4 4 2015-10-05 20:32:59.029
+!MESSAGE Could not obtain PHP executable info.
+!STACK 0
+org.eclipse.php.internal.debug.core.PHPExeException: Invalid PHP executable: C:\Users\luis felipe\Desktop\eclipse.
+	at org.eclipse.php.internal.debug.core.PHPExeUtil.getPHPInfo(PHPExeUtil.java:203)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.getPHPInfo(PHPExeCompositeFragment.java:377)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.updateItem(PHPExeCompositeFragment.java:405)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.init(PHPExeCompositeFragment.java:280)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.setData(PHPExeCompositeFragment.java:91)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeWizardFragment.enter(PHPExeWizardFragment.java:50)
+	at org.eclipse.php.internal.ui.wizards.FragmentedWizard.switchWizardFragment(FragmentedWizard.java:334)
+	at org.eclipse.php.internal.ui.wizards.FragmentedWizardPage.setVisible(FragmentedWizardPage.java:96)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:1256)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:599)
+	at org.eclipse.jface.window.Window.create(Window.java:430)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.jface.window.Window.open(Window.java:792)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.addPHPexe(InstalledPHPsBlock.java:209)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.access$15(InstalledPHPsBlock.java:201)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock$12.handleEvent(InstalledPHPsBlock.java:377)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:211)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:63)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+
+!ENTRY org.eclipse.php.debug.core 4 4 2015-10-05 20:36:42.652
+!MESSAGE Could not obtain PHP executable info.
+!STACK 0
+org.eclipse.php.internal.debug.core.PHPExeException: Invalid PHP executable: C:\Users\luis felipe\Desktop\eclipse.
+	at org.eclipse.php.internal.debug.core.PHPExeUtil.getPHPInfo(PHPExeUtil.java:203)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.getPHPInfo(PHPExeCompositeFragment.java:377)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.updateItem(PHPExeCompositeFragment.java:405)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.init(PHPExeCompositeFragment.java:280)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.setData(PHPExeCompositeFragment.java:91)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeWizardFragment.enter(PHPExeWizardFragment.java:50)
+	at org.eclipse.php.internal.ui.wizards.FragmentedWizard.switchWizardFragment(FragmentedWizard.java:334)
+	at org.eclipse.php.internal.ui.wizards.FragmentedWizardPage.setVisible(FragmentedWizardPage.java:96)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:1256)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:599)
+	at org.eclipse.jface.window.Window.create(Window.java:430)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.jface.window.Window.open(Window.java:792)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.addPHPexe(InstalledPHPsBlock.java:209)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.access$15(InstalledPHPsBlock.java:201)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock$12.handleEvent(InstalledPHPsBlock.java:377)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:211)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:63)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+
+!ENTRY org.eclipse.ui 4 0 2015-10-05 20:40:44.164
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
+	at org.eclipse.swt.widgets.Table.getItems(Table.java:2669)
+	at org.eclipse.jface.viewers.CheckboxTableViewer.preservingSelection(CheckboxTableViewer.java:327)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1523)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:522)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1482)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.editPHPexe(InstalledPHPsBlock.java:455)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.access$12(InstalledPHPsBlock.java:443)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock$13.handleEvent(InstalledPHPsBlock.java:385)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:211)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:63)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 0 2015-10-05 20:42:28.061
+!MESSAGE Failed to send error log entry.
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.UploadJob.run(UploadJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.dubture.symfony.core 4 4 2015-10-05 20:53:17.262
+!MESSAGE Unable to initialize symfony project, cannot retrieve project
+
+!ENTRY org.eclipse.core.resources 2 2 2015-10-05 20:53:22.488
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-10-05 20:53:22.488
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:28.936
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:28.980
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.040
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.103
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.174
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.204
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.232
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.316
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.355
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.380
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.410
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.480
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.501
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.559
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.590
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.626
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.648
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.670
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.761
+!MESSAGE Error setting marker for synthetic service service_container
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.784
+!MESSAGE Error setting marker for synthetic service kernel
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:29.907
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:44.894
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:49.254
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:50.872
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:51.575
+!MESSAGE Error setting marker for service assetic.php_formula_loader
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:51.592
+!MESSAGE Error setting marker for service assetic.twig_formula_loader
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:51.728
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:51.733
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:55:52.725
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.254
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.388
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.445
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.462
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.469
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.475
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.481
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.489
+!MESSAGE Error setting marker for synthetic service kernel
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.496
+!MESSAGE Error setting marker for synthetic service service_container
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.513
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.542
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:05.618
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.742
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.748
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.781
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.786
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.792
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.798
+!MESSAGE Error setting marker for service security.acl.cache.doctrine
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.815
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:06.838
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:07.130
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.732
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.737
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.806
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.812
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.822
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.850
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.906
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.911
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.916
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.923
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.958
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.963
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:56:09.972
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.224
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.451
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.496
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.692
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.740
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.822
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.891
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.917
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:30.929
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.020
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.053
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.059
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.070
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.083
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.126
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.396
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.408
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.423
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.428
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.485
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.501
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.543
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.600
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.807
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.842
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.847
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.852
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.943
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:31.967
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.003
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.011
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.025
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.030
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.886
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.928
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:32.986
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.041
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.046
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.053
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.090
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.111
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.139
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.160
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.213
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.243
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.248
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.253
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.259
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.264
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.312
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.352
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.430
+!MESSAGE Error setting marker for synthetic service service_container
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.446
+!MESSAGE Error setting marker for synthetic service kernel
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 20:57:33.480
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.238
+!MESSAGE /agenciaviajes/vendor/doctrine/common/lib/Doctrine/Common/Reflection/RuntimePublicReflectionProperty.php: error parsing namespace parts for ReflectionProperty
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.271
+!MESSAGE /agenciaviajes/vendor/doctrine/common/lib/Doctrine/Common/Reflection/StaticReflectionClass.php: error parsing namespace parts for ReflectionClass
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.300
+!MESSAGE /agenciaviajes/vendor/doctrine/common/lib/Doctrine/Common/Reflection/StaticReflectionMethod.php: error parsing namespace parts for ReflectionMethod
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.357
+!MESSAGE /agenciaviajes/vendor/doctrine/common/lib/Doctrine/Common/Reflection/StaticReflectionProperty.php: error parsing namespace parts for ReflectionProperty
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.447
+!MESSAGE /agenciaviajes/vendor/doctrine/common/tests/Doctrine/Tests/Common/Persistence/ManagerRegistryTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.591
+!MESSAGE /agenciaviajes/vendor/doctrine/common/tests/Doctrine/Tests/Common/Proxy/AutoloaderTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.650
+!MESSAGE /agenciaviajes/vendor/doctrine/common/tests/Doctrine/Tests/Common/Proxy/ProxyClassGeneratorTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.710
+!MESSAGE /agenciaviajes/vendor/doctrine/common/tests/Doctrine/Tests/Common/Proxy/ProxyLogicTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.751
+!MESSAGE /agenciaviajes/vendor/doctrine/common/tests/Doctrine/Tests/Common/Proxy/ProxyMagicMethodsTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:35.815
+!MESSAGE /agenciaviajes/vendor/doctrine/common/tests/Doctrine/Tests/Common/Reflection/RuntimePublicReflectionPropertyTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:36.256
+!MESSAGE /agenciaviajes/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/OCI8/OCI8Statement.php: error parsing namespace parts for IteratorAggregate
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:36.274
+!MESSAGE /agenciaviajes/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php: error parsing namespace parts for PDO
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:36.361
+!MESSAGE /agenciaviajes/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLAnywhere/SQLAnywhereStatement.php: error parsing namespace parts for IteratorAggregate
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:36.396
+!MESSAGE /agenciaviajes/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvStatement.php: error parsing namespace parts for IteratorAggregate
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.271
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/InvalidArgumentExceptionTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.281
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/Exception/UnexpectedValueExceptionTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.292
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTest/InstantiatorTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.305
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ArrayObjectAsset.php: error parsing namespace parts for ArrayObject
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.313
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/ExceptionAsset.php: error parsing namespace parts for Exception
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.322
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/FinalExceptionAsset.php: error parsing namespace parts for Exception
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.330
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharAsset.php: error parsing namespace parts for Phar
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.339
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/PharExceptionAsset.php: error parsing namespace parts for PharException
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.348
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php: error parsing namespace parts for ArrayObject
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.353
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SerializableArrayObjectAsset.php: error parsing namespace parts for Serializable
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.361
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/SimpleSerializableAsset.php: error parsing namespace parts for Serializable
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.374
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/UnserializeExceptionArrayObjectAsset.php: error parsing namespace parts for ArrayObject
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.382
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/WakeUpNoticesAsset.php: error parsing namespace parts for ArrayObject
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.393
+!MESSAGE /agenciaviajes/vendor/doctrine/instantiator/tests/DoctrineTest/InstantiatorTestAsset/XMLReaderAsset.php: error parsing namespace parts for XMLReader
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:38.829
+!MESSAGE /agenciaviajes/vendor/doctrine/orm/lib/Doctrine/ORM/Id/SequenceGenerator.php: error parsing namespace parts for Serializable
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:39.508
+!MESSAGE /agenciaviajes/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ReflectionEmbeddedProperty.php: error parsing namespace parts for ReflectionProperty
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:39.551
+!MESSAGE /agenciaviajes/vendor/doctrine/orm/lib/Doctrine/ORM/ORMException.php: error parsing namespace parts for Exception
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:43.010
+!MESSAGE /agenciaviajes/vendor/monolog/monolog/tests/Monolog/Handler/MockRavenClient.php: error parsing namespace parts for Raven_Client
+
+!ENTRY com.dubture.symfony.core 2 2 2015-10-05 20:57:51.323
+!MESSAGE /agenciaviajes/vendor/symfony/symfony/src/Symfony/Component/Console/Tests/Style/SymfonyStyleTest.php: error parsing namespace parts for PHPUnit_Framework_TestCase
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.010
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.019
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.026
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.033
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.038
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.044
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.049
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.054
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.061
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.066
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.071
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.082
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.089
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.095
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.101
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.107
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.112
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.116
+!MESSAGE Unable to parse class attribute from service [service: null]
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.202
+!MESSAGE Error setting marker for synthetic service service_container
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.215
+!MESSAGE Error setting marker for synthetic service kernel
+
+!ENTRY com.dubture.symfony.core 1 1 2015-10-05 21:28:36.253
+!MESSAGE Error setting marker for synthetic service request
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-10-06 00:22:02.890
+!MESSAGE IWAE0027E Could not retrieve the validation configuration for resource  .
+!STACK 0
+java.lang.reflect.InvocationTargetException: IWAE0027E Could not retrieve the validation configuration for resource  .
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:135)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:797)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager$DisabledValidationFinder.findDisabledValidatorsFor(DisabledValidatorManager.java:109)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager.getDisabledValidatorsFor(DisabledValidatorManager.java:62)
+	at org.eclipse.wst.validation.ValidationFramework.getDisabledValidatorsFor(ValidationFramework.java:232)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isValidatorDisabled(ASTProvider.java:600)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isReconciling(ASTProvider.java:583)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.PHPStructuredEditor$5.run(PHPStructuredEditor.java:3244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/ ' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:140)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	... 15 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Resource '/ ' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:140)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:797)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager$DisabledValidationFinder.findDisabledValidatorsFor(DisabledValidatorManager.java:109)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager.getDisabledValidatorsFor(DisabledValidatorManager.java:62)
+	at org.eclipse.wst.validation.ValidationFramework.getDisabledValidatorsFor(ValidationFramework.java:232)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isValidatorDisabled(ASTProvider.java:600)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isReconciling(ASTProvider.java:583)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.PHPStructuredEditor$5.run(PHPStructuredEditor.java:3244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-10-06 07:19:42.719 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2015-10-06 07:19:58.088
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-10-06 07:19:58.088
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,Declaration in Workspace,
+		Search for declarations of the selected element in the workspace,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7207f3c2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.pdtextensions.core.ui.generategetters,Generate Getters and Setters,
+		Generate Getters and Setters,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@574134ba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-06 07:20:19.183
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\luis felipe'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 23 2015-10-06 07:20:35.468
+!MESSAGE The server availability check failed Version: 1.0.0.v20150617-0732
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2015-10-06 07:21:22.999
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:94)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2015-10-06 07:21:23.048
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-10-06 09:17:13.807
+!MESSAGE IWAE0027E Could not retrieve the validation configuration for resource  .
+!STACK 0
+java.lang.reflect.InvocationTargetException: IWAE0027E Could not retrieve the validation configuration for resource  .
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:135)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:797)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager$DisabledValidationFinder.findDisabledValidatorsFor(DisabledValidatorManager.java:109)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager.getDisabledValidatorsFor(DisabledValidatorManager.java:62)
+	at org.eclipse.wst.validation.ValidationFramework.getDisabledValidatorsFor(ValidationFramework.java:232)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isValidatorDisabled(ASTProvider.java:600)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isReconciling(ASTProvider.java:583)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.PHPStructuredEditor$5.run(PHPStructuredEditor.java:3244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/ ' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:140)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	... 15 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Resource '/ ' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:140)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:797)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager$DisabledValidationFinder.findDisabledValidatorsFor(DisabledValidatorManager.java:109)
+	at org.eclipse.wst.validation.internal.DisabledValidatorManager.getDisabledValidatorsFor(DisabledValidatorManager.java:62)
+	at org.eclipse.wst.validation.ValidationFramework.getDisabledValidatorsFor(ValidationFramework.java:232)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isValidatorDisabled(ASTProvider.java:600)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.isReconciling(ASTProvider.java:583)
+	at org.eclipse.php.internal.ui.editor.ASTProvider.getAST(ASTProvider.java:497)
+	at org.eclipse.php.ui.editor.SharedASTProvider.getAST(SharedASTProvider.java:143)
+	at org.eclipse.php.internal.ui.editor.PHPStructuredEditor$5.run(PHPStructuredEditor.java:3244)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.php.debug.core 4 4 2015-10-06 09:45:02.812
+!MESSAGE Could not obtain PHP executable info.
+!STACK 0
+org.eclipse.php.internal.debug.core.PHPExeException: Invalid PHP executable: C:\Users\luis felipe\Desktop\eclipse.
+	at org.eclipse.php.internal.debug.core.PHPExeUtil.getPHPInfo(PHPExeUtil.java:203)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.getPHPInfo(PHPExeCompositeFragment.java:377)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.updateItem(PHPExeCompositeFragment.java:405)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.init(PHPExeCompositeFragment.java:280)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeCompositeFragment.setData(PHPExeCompositeFragment.java:91)
+	at org.eclipse.php.internal.debug.ui.wizards.PHPExeWizardFragment.enter(PHPExeWizardFragment.java:50)
+	at org.eclipse.php.internal.ui.wizards.FragmentedWizard.switchWizardFragment(FragmentedWizard.java:334)
+	at org.eclipse.php.internal.ui.wizards.FragmentedWizardPage.setVisible(FragmentedWizardPage.java:96)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:1256)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:599)
+	at org.eclipse.jface.window.Window.create(Window.java:430)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1096)
+	at org.eclipse.jface.window.Window.open(Window.java:792)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.addPHPexe(InstalledPHPsBlock.java:209)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock.access$15(InstalledPHPsBlock.java:201)
+	at org.eclipse.php.internal.debug.ui.preferences.phps.InstalledPHPsBlock$12.handleEvent(InstalledPHPsBlock.java:377)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:827)
+	at org.eclipse.jface.window.Window.open(Window.java:803)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:211)
+	at org.eclipse.ui.internal.OpenPreferencesAction.run(OpenPreferencesAction.java:63)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4362)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1113)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4180)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3769)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1488)

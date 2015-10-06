@@ -1,0 +1,4 @@
+services:
+#    tesoreria_main.example:
+#        class: Tesoreria\MainBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

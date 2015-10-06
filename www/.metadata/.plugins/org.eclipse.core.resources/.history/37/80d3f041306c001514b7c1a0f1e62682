@@ -1,0 +1,12 @@
+agencia_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AgenciaMainBundle:Default:index }
+    
+agencia_main_agregarP:
+    path:     /pagos/agregarp/{valor}/{solicitud}
+    defaults: { _controller: AgenciaMainBundle:Pagos:agregarp }
+    
+agencia_main_ponerTP:
+    path:     /pagos/todos
+    defaults: { _controller: AgenciaMainBundle:Pagos:ponerTodo }
+

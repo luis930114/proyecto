@@ -1,0 +1,3 @@
+area_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AreaMainBundle:Default:index }

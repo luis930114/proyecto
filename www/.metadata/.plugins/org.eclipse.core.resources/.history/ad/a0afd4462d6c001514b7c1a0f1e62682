@@ -1,0 +1,35 @@
+<?php
+
+namespace Agencia\MainBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Agencia\MainBundle\Entity\Pagos;
+use \Symfony\Component\HttpFoundation\Response;
+class PagosController extends Controller{
+	public function agregarpAction($valor,$solicitud) {
+		
+		$pago=new Pagos();
+// 		$pago->setId($id);
+		$pago->setValor($valor);
+		$pago->setSolicitudAprobada($solicitud);
+		
+		$acum=$this->getDoctrine()->getManager();
+		$acum->persist($pago);
+		$acum->flush();
+		
+		return new Response('el id del producto es: '.$pago->getId().'  y se creo bien');
+		
+	}
+	
+	public function  ponerTodoAction(){
+		$em= $this->getDoctrine()->getManager();
+		$pago= $em->getRepository('AgenciaMainBundle:Pagos')->findAll();
+		$res="pagos: <br>";
+		foreach ($pago as $pago){
+			$res .='id:' .$pago->getId().'valor: '.$pago->getValor(). '<br>';
+		}
+		return new Response(
+				$res
+				);
+	}
+	}

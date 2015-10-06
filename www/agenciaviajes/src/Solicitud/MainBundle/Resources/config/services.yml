@@ -1,0 +1,4 @@
+services:
+#    solicitud_main.example:
+#        class: Solicitud\MainBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

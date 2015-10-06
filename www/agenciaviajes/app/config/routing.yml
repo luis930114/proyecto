@@ -1,0 +1,43 @@
+tesoreria_main:
+    resource: "@TesoreriaMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+superior_i_main:
+    resource: "@SuperiorIMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+solicitud_main:
+    resource: "@SolicitudMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+solicitante_main:
+    resource: "@SolicitanteMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+rectoria_main:
+    resource: "@RectoriaMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+contabilidad_main:
+    resource: "@ContabilidadMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+comision_main:
+    resource: "@ComisionMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+area_main:
+    resource: "@AreaMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pago_main:
+    resource: "@PagoMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+agencia_main:
+    resource: "@AgenciaMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

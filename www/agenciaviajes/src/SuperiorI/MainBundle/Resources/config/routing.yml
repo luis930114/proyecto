@@ -1,0 +1,3 @@
+superior_i_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SuperiorIMainBundle:Default:index }
